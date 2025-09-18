@@ -1,0 +1,4 @@
+google-generativeai
+opencv-python
+pytesseract
+PyPDF2
