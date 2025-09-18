@@ -1,0 +1,8 @@
+Flask
+Flask-CORS
+Flask-SQLAlchemy
+python-dotenv
+pytesseract
+opencv-python
+PyPDF2
+requests

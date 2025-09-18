@@ -6,8 +6,13 @@ import google.generativeai as genai
 # Configure Tesseract OCR
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
+API_KEY = os.getenv("GEMINI_API_KEY")
+
+if not API_KEY:
+    raise ValueError("🚨 GEMINI_API_KEY not found in .env file!")
+
 # Initialize Gemini AI
-genai.configure(api_key="AIzaSyCzMGJKGymLp9IrPCRGWG3um-6t5j7F1oE")
+genai.configure(api_key=API_KEY)
 
 class GradePredictor:
     def extract_text_from_pdf(self, pdf_path):
