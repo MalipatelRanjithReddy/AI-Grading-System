@@ -1,1 +1,25 @@
--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Student Dashboard</h2>
+    <button onclick="logout()">Logout</button>
+
+    <h3>Upload Assignment</h3>
+    <form id="uploadForm">
+      <input type="file" id="assignmentFile" required>
+      <button type="submit">Upload</button>
+    </form>
+
+    <h3>Your Grades</h3>
+    <div id="grades"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
